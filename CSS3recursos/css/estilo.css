@@ -1,0 +1,85 @@
+
+
+
+/* ************AULA ANIMAÇOES CSS3 **************** */
+/*
+	@keyframes animacao-caixa {
+		from {
+			background: red;
+			border-radius: 0px;
+			top: 0;
+			left: 0;
+			} /*de inicio */
+	/*	to {
+			background: yellow;
+			border-radius: 300px;
+			top: 200px;
+			left: 200px;
+			} /* para final */
+	/*}*/
+
+/*
+#caixa {
+	width: 300px;
+	height: 300px;
+	background: red;
+	position: relative;
+	/*animation-name: animacao-caixa;
+	animation-duration: 5s;
+	animation-delay: 3s;
+	animation-iteration-count: 2;
+	animation-direction: alternate;*/
+
+	/*animation: animacao-caixa 3s 3s 2 alternate;
+}*/
+
+
+/* *****************AULA SOMBRAS********************* */
+
+
+/*
+#caixa {
+	width: 300px;
+	height: 300px;
+	padding: 8px;
+	margin: 20px;
+	background: #009670;
+}
+
+#caixa h1 {
+	color: white;
+	text-shadow: 20px 20px black;
+}
+
+*/
+
+
+/* **************AULA GRADIENTE******************* */
+ /*
+#caixa {
+	width: 300px;
+	height: 300px;
+	/*background: url("../imagens/camera.png");*/
+	/*background: linear-gradient(to left, red, green);*/
+	/*background: radial-gradient(red, green, yellow);*/
+/*
+#caixa h1 {
+	background: rgb(255, 255, 255, 0.5); 
+}*/
+
+
+
+/* *****************AULA BORDA*************** */
+/*
+#caixa {
+	width: 300px;
+	height: 300px;
+	background: #b9c941;
+	padding: 10px;
+	margin: 10px;
+	-webkit-border-radius: 10px 50px 80px 100px;
+	-moz-border-radius: 10px 50px 80px 100px;
+	border-radius: 10px 50px 80px 100px;
+}
+*/
+

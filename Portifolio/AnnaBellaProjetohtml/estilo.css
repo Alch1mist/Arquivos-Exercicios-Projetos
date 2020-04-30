@@ -1,0 +1,44 @@
+body {
+	background: #d2d2c1 url('imagens/fundo.png'); /* colocando imagem de capa e definindo
+	o tipo de fonte a ser usado no body */ 
+	font: 16px Arial, Helvetica, sans-serif;
+}
+
+#principal { /* criando um container para que todos os outros componentes adicionados
+sigam esse tamanho */ 
+	width: 900px;
+}
+#menu { /* div feita para criar a barra do menu de links com esse ID */ 
+	background: #c5c5b2;
+	padding:  18px;
+
+}
+
+#conteudo { /* criando um conteiner para o "Sobre" deifindo cor e espaçamento */
+		background: #e8e8d9;
+		padding: 10px;
+}
+
+#rodape {
+	text-align: center;
+}
+
+
+a {
+	color: #4b566a; /* aplicando uma cor na fonte  */
+	text-decoration: none; /*  tirando o underline da fonte original   */
+	font-weight: bold;
+	padding: 5px; /* aumentar o espaçamento entre as opcoes */
+}
+.centralizar {
+	text-align: center;
+}
+
+.img-campanha {
+	border: 10px solid #c3c3ae;
+}
+
+h1 {
+	color: #828271;
+	font-size: 1.2em;
+}
