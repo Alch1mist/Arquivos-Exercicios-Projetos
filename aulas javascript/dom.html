@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selecionando elementos DOM</title>
+
+    <script>
+    /*
+    DOM PARTE 2 - SELECIONANDO ELEMENTOS DA PÁGINA.   
+        document (API DOM)
+        getElementById() // seleciona a partir do ID
+        getElementsByTagName() // seleciona a partir da tag name.
+        getElementsByClassName() // seleciona a partir da classe
+        getElementsByName() // seleciona a partir do nome.
+
+        <input
+            type="text"
+            placeholder="Digite seu nome"
+            id="nome_usuario"
+            class="campo_texto"
+            name="nome"
+        />    
+
+    */
+
+    
+
+    </script>
+
+
+</head>
+<body>
+
+    <input
+        type="text"
+        placeholder="Digite seu nome"
+        id="nome_usuario"
+        class="campo_texto"
+        name="nome"
+        /> 
+
+<script>
+    //console.log(document.getElementById('nome_usuario'))
+    //console.log(document.getElementsByTagName('input'))
+    //console.log(document.getElementsByClassName('campo_texto'))
+    console.log(document.getElementsByName('nome'))
+</script>
+    
+    
+</body>
+</html>

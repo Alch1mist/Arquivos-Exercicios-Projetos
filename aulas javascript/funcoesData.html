@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+
+    <script>
+
+        // data e um objeto que precisa ser instanciado
+        //new Date() faz com que um novo objeto de data seja criado e atribuido na variavel
+
+        //var data = new Date()
+
+        //getDate(): dia atual
+
+        //document.write(data.getDate()) 
+
+        //getMonth(): retorna o mes
+        //document.write(data.getMonth() + 1)
+
+        //getFullYear: retorna o ano
+        //document.write(data.getFullYear())
+
+/*
+        var data = new Date()
+
+//adicionar ou remover dias 
+
+        document.write(data.toString())
+        data.setDate(data.getDate() + 1)
+        document.write('<hr />')
+        document.write(data.toString())
+        document.write('<br /><br /><hr / >')
+
+   //adicionar, remover meses
+        document.write(data.toString())
+        data.setMonth(data.getMonth() - 1)
+        document.write('<hr />')
+        document.write(data.toString())
+        document.write('<br /><br /><hr / >')
+
+    //adicionar,remover anos
+        document.write(data.toString())
+        data.setFullYear(data.getFullYear() + 1)
+        document.write('<hr />')
+        document.write(data.toString())        
+*/
+
+//15/01/2017
+var data1 = new Date(2017, 0, 15)
+
+//23/02/2017
+var data2 = new Date(2017, 1, 23)
+
+document.write(data1.toString())
+document.write('<hr />')
+document.write(data2.toString())
+document.write('<br /><br /><hr />')
+//converter para algo que possa calcular
+
+document.write(data1.getTime())
+document.write('<hr />')
+document.write(data2.getTime())
+document.write('<br /><br /><hr />')
+
+//1 de janeiro 1970
+
+//encontrar qtde de milisegundos entre data1 e data2
+var milisegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+document.write(milisegundos_entre_datas)
+
+//1 dia tem 24 horas,cada hora 60 minutos,cada minuto 60 segundos e cada segundo tem 1000 milisegundos
+//entao quantos milisegundos existem em um dia?
+var milisegundos_por_dia = (1*24*60*60*1000)
+document.write('1 dia tem:' + milisegundos_por_dia + ' milisegundos')
+
+document.write('<br /><br /><hr />')
+
+
+document.write('A Diferença entre data1 e data2 e: ' + Math.ceil(milisegundos_entre_datas / milisegundos_por_dia) + ' Dias')
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

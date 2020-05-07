@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse</title>
+    <script>
+// onclick: aciona o evento quando e clicado
+
+//ondblclick: aciona quando clica duas vezes
+
+//onmouseup: aciona quando e liberado o evento
+
+//onmouseover: quando o cursor do mouse sobrepoe o evento
+
+//onmouseout: aciona quando o cursor dou mouse sai da pagina criada pelo elemento
+
+//supported HTML tags: All HTML elements, EXCEPT: <base>, <bdo>, <br>, <head>, <html>, <iframe>, <meta>, <param>, <script>, <style>, and <title>.
+
+        function acao() {
+            alert('Evento disparado')
+        }
+
+
+
+
+
+    </script>
+</head>
+<body>
+    onclick 
+    <!-- onclick -->
+    <div onclick="acao()" style="background: #ccc ; height: 150px; width: 150px;"></div>
+    ondblclick 
+    <!-- ondblclick-->
+    <div ondblclick="acao()" style="background: rgb(19, 1, 1) ; height: 150px; width: 150px;"> ondblclick</div>
+    onmouseup
+    <!-- onmouseup-->
+    <div onmouseup="acao()" style="background: rgb(255, 13, 13) ; height: 150px; width: 150px;"></div>
+    <!-- onmouseover-->
+    onmouseover
+    <div onmouseover="acao()" style="background: rgb(107, 28, 28) ; height: 150px; width: 150px;"></div>
+    <!-- onmouseout-->
+    onmouseout 
+    <div onmouseout="acao()" style="background: rgb(54, 40, 40) ; height: 150px; width: 150px;"></div>
+</body>
+</html>

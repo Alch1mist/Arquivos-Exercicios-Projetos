@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+    
+ <script>
+       var nome = prompt('Informe seu nome: ')
+       var altura = prompt('Informe sua altura em centimetros: ')
+       var peso = prompt('Informe seu peso em Kg: ') 
+
+       var altura = parseFloat(altura)  
+       var peso = parseFloat(peso)  
+
+       var metro = altura / 100
+       var M = peso / (metro * 2)
+
+       if(M >= 0 && M < 16){
+        alert( nome + ' possui índice de massa corporal igual a ' + M + ' sendo classificado como: Baixo peso,muito grave');
+        } else if(M == 16 && M <= 16.99){
+        alert(nome + ' possui índice de massa corporal igual a ' + M + ' sendo classificado como: Baixo peso,grave');
+        } else if(M >= 17 && M <= 18.49){
+        alert(nome + ' possui índice de massa corporal igual a ' + M + ' sendo classificado como: Baixo peso'); 
+        } else if(M >= 18.50 && M <= 24.99){
+        alert(nome + ' possui índice de massa corporal igual a ' + M + ' sendo classificado como: Peso normal'); 
+        } else if(M >= 25 && M <= 29.99){
+        alert(nome + ' possui índice de massa corporal igual a ' + M + ' sendo classificado como: Sobrepeso'); 
+        } else if(M >= 30 && M <= 34.99){
+        alert(nome + ' possui índice de massa corporal igual a ' + M + ' sendo classificado como: Obesidade grau 1'); 
+        } else if(M >= 35 && M < 39.99){
+        alert(nome + ' possui índice de massa corporal igual a ' + M + ' sendo classificado como: Obesidade grau 2'); 
+        } else {
+        alert(nome + ' possui índice de massa corporal igual a ' + M + ' sendo classificado como: Obesidade grau 3')
+        }
+
+
+</script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

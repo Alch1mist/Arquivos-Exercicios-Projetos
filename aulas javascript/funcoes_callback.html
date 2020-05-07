@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+    <script>
+        /*
+            funçoes de callback são funções encaminhadas para outras funções como parametro para outras funçoes,apos a finalização da função  ter condição de chamar a funçao encaminhada por parametro dando continuidade no processamento da logica da programação.
+        */
+
+        function exibirArtigo(id, callbackSucesso, callbackErro){
+            //lógica: recuperar o id via requisição http
+            if (true) {
+                callbackSucesso('Funçoes de callback em JS', 'Sao muito utilizadas em...')
+            } else {
+                callbackErro('Erro ao recuperar os dados.')
+            }
+        }
+
+        var callbackSucesso = function(titulo, descricao){
+            document.write('<h1>' + titulo + '</h1>')
+            document.write('<hr />')
+            document.write('<h1>' + descricao + '</h1>')
+        }
+
+        var callbackErro = function(erro) {
+            document.write('<p><b>Erro:</b>' + erro + '</p>')
+        }
+
+        exibirArtigo(1, callbackSucesso, callbackErro)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

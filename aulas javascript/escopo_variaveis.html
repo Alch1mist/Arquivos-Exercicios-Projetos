@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo variaveis</title>
+    <script>
+    //3 escopos: global, função e o bloco
+    /*
+     Global: o escopo global pode ser acessado em todos os lugares,variaveis declaradas globais podem ser acessadas em qualquer lugar do projeto.
+
+     Função: o escopo de função so pode ser acessado dentro de sua respectiva função, variaveis declaradas em funções podem ser usadas apenas na função declarada.
+     
+     Bloco: o escopo de bloco pode ser acessado de qualquer lugar pois o escopo de bloco e filho de escopo global,variaveis declaradas dentro do bloco sofre elevação por isso se tornam global.
+    */
+
+    var serie = 'friends'
+
+    // escopo de bloco
+    if (true) {
+        var serie2 = 'GameOfThrones'
+        document.write(serie)
+    }
+
+    document.write(serie2)
+
+    document.write('<br />')
+
+    function x() {
+        var serie3 = 'TWD'
+        document.write(serie)
+        document.write(serie2)
+    }
+    x()
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

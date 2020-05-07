@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ifelse operadores logicos</title>
+		<script>
+
+        //true && true && false = false
+        // operador && qual ação nao verdadeira o resultado sera falso,se todas forem verdadeiras sera true.
+        /*
+        if(2 == 2 && 3 >= 1 && 'a' == 'b') {
+            document.write('Verdadeiro')
+        }  else {
+            document.write('false')
+        }  
+        */
+        
+        //operador ou ||
+        // se uma expressão for true o resultado sera true.ira retornar false somente se todas forem falsas.
+        /*
+        if( 2 == 2 || 3 >= 1 || 'a' == 'b') {
+            document.write('Verdadeiro')
+        } else {
+            document.write('False')
+        } */
+
+
+        // o operador de negação inverte o resultado se ele for true o transformara em false e se for false transformara em true.
+        // true = false
+        //false = true
+        /*
+        if (!( 5 >= 2)) {
+            document.write('Verdadeiro')
+        } else {
+            document.write('False')
+        } */
+
+        var nota = prompt('Digite a nota do aluno:')
+        var faltas = prompt('Digite a quantidade de faltas: ')
+
+        var media = 7
+        var faltas_maximas = 15
+        /*
+        if (nota >= media && faltas <= faltas_maximas) {
+            document.write('Aprovado')
+        } else {
+            document.write('reprovado')
+        } */
+
+        // valor ternario executando a mesma funçao do if/else acima, a diferença e que no if/else pode se executar uma logica e no valor ternario nao tem como adicionar logicas e ele somente ira retornar dois valores.
+        var resultado = (nota >= media && faltas <= faltas_maximas) ? 'Aprovado' : 'Reprovado'
+
+        document.write(resultado)
+
+		
+			
+		</script>
+	</head>
+
+	<body>
+		
+
+
+
+		
+
+	</body>
+</html>
